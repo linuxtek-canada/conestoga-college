@@ -19,17 +19,18 @@ Database Name:  Library
 
 # Give user permissions to database server
 # As the root user (no username)
-GRANT ALL ON *.* TO 'sysadmin';
+
+`GRANT ALL ON *.* TO 'sysadmin';`
 
 # Create Database
-CREATE DATABASE library;
+`CREATE DATABASE library;`
 
 # Use Database
-USE library;
+`USE library;`
 
 # Create Table
-# CREATE TABLE books;
 
+```
 CREATE TABLE books (
     id int not null,
     title text,
@@ -38,9 +39,12 @@ CREATE TABLE books (
     date date,
     genre text,
     primary key (id));
+```
 
 # Populate the Database - 3 Rows
 
+```
 INSERT into books values (1,"Neuromancer","William Gibson","Ace","1984-07-01","Cyberpunk, Fiction");
 INSERT into books values (2,"Fool Moon","Jim Butcher","Penguin Putnam","2001-01-01","Fantasy");
 INSERT into books values (3,"The Last Wish","Andrzej Sapkowski","Supernowa","1993-01-01","Fantasy");
+```
